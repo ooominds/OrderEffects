@@ -11,7 +11,7 @@ R files:
 - ControlGroupTest.r: the code that checks our control group's results against the treatment groups'. Goes with PrePostTreatmentControl.xlsx 
 - TrainingDays.r : the code for the analysis of participants' performance on the four days of training. Goes with training_4days_data.xlsx
 
-Data files:
+Data files (can be found at the following link: ADD LINK TO UBIRA):
 - OderHardItems.xlsx: the data file to be used with OrderHardItems.r
 - PrePostDelayedTestsAnswers.xlsx: the data file needed to run  RROrder.r
 - PrePostTreatmentControl.xlsx: the data file with the control group's results, to be used with ControlGroupTest.r 
