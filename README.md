@@ -12,12 +12,14 @@ This contains the code for the analyses reported in
 - `04_TrainingDays.R`: the code for the analysis of participants' performance on the four days of training. Runs with `AllDayScores` and `TrainingData` datafiles.
 - `05_LearningRateEffect.jasp`: Estimates the Bayesian nonparametric correlations (Kendall's tau) using the *JASP* statistical program. Data is included in the package.
 
-The data can be downloaded from The University of Birmingham Institutional Research Archive (UBIRA) at [https://edata.bham.ac.uk/1155/](https://edata.bham.ac.uk/1155/). All files are saved in `*.csv` and `*.rda` format.
+The data can be downloaded from The University of Birmingham Institutional Research Archive (UBIRA) at [https://edata.bham.ac.uk/1155/](https://edata.bham.ac.uk/1155/). All files are saved in `*.csv` and `*.rda` format:
+
 - `ControlGroupTest`
 - `AllTestScores`
 - `HardData`
 - `AllDayScores`
 - `TrainingData`
+<br>
 
 - - -
 
