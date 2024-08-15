@@ -1,25 +1,24 @@
 # OrderEffects
-This contains the code for the paper Order effects in L2 learning
 
-This is the readme file for the data and code associated with the MS "Order effects in L2"
+<br>
 
-This folder contains:
+This contains the code for the analyses reported in
 
-R files: 
-- OrderHardItems.r: the code for the analysis of the effects of order of exposure (type of training) with a focus on the difficulty level of the items (based on pre- and post-tests results). Goes with OderHardItems.xlsx
-- RROrder.r: the code for the overall analysis of pre- and post-test results depending on training and participants. Goes with PrePostDelayedTestsAnswers.xlsx
-- ControlGroupTest.r: the code that checks our control group's results against the treatment groups'. Goes with PrePostTreatmentControl.xlsx 
-- TrainingDays.r : the code for the analysis of participants' performance on the four days of training. Goes with training_4days_data.xlsx
+> Romain, L., Milin, P., and Divjak, D. (2024). rder Effects in Second Language Learning. To appear in: *Language Learning*.
 
-Data files (can be found at the following link: ADD LINK TO UBIRA):
-- OderHardItems.xlsx: the data file to be used with OrderHardItems.r
-- PrePostDelayedTestsAnswers.xlsx: the data file needed to run  RROrder.r
-- PrePostTreatmentControl.xlsx: the data file with the control group's results, to be used with ControlGroupTest.r 
-- training_4days_data.xlsx: data file containing participants' answers for each day of training and correct answers for each item, to be used with TrainingDays.r 
-- PrePostStimuliForMerging.xlsx: stimuli for pre-, post- and delayed post-tests with level of difficulty for each item
-- performance_on_seen_items.csv: participants' scores on previously seen stimuli
+- `01_ControlGroupTest.R`: the code that checks our control group's results against the treatment groups'. Runs with `ControlGroupTest` datafile; `brm1C.rn.rda` and `summary.brm1C.rn.rda` contain the Bayesian regression model and its summary, respectively.
+- `02_RROrder.R`: the code for the overall analysis of pre- and post-test results depending on training and participants. Runs with `AllTestScores` datafile. All models and their summaries are stored: `brm1.rn.rda` and `summary.brm1.rn.rda`, `summary.post.draws.rda`, `brm1.rn.withPriors.rda` and `summary.brm1.rn.withPriors.rda`.
+- `03_HardItems.R`: the code for the analysis of the effects of order of exposure (type of training) with a focus on the difficulty level of the items (based on pre- and post-tests results). Runs with `HardData` datafile.
+- `04_TrainingDays.R`: the code for the analysis of participants' performance on the four days of training. Runs with `AllDayScores` and `TrainingData` datafiles.
+- `05_LearningRateEffect.jasp`: Estimates the Bayesian nonparametric correlations (Kendall's tau) using the *JASP* statistical program. Data is included in the package.
 
-RDA files:
-- brm1.rn.rda: Bayesian analysis of pre, post, and delayed post-tests results for treatment groups
-- brm1C.rn.rda: Bayesian analysis pre and post-tests results for control and treatment groups
-- brm1Days.rda: Bayesian analysis of individual training days
+The data can be downloaded from The University of Birmingham Institutional Research Archive (UBIRA) at [https://edata.bham.ac.uk/1155/](https://edata.bham.ac.uk/1155/). All files are saved in `*.csv` and `*.rda` format.
+- `ControlGroupTest`
+- `AllTestScores`
+- `HardData`
+- `AllDayScores`
+- `TrainingData`
+
+- - -
+
+For further inquiries contact: ooominds@ooominds.org
