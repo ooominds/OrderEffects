@@ -10,16 +10,16 @@ This contains the code for the analyses reported in
 - `02_RROrder.R`: the code for the overall analysis of pre- and post-test results depending on training and participants. Runs with `AllTestScores` datafile. All models and their summaries are stored: `brm1.rn.rda` and `summary.brm1.rn.rda`, `summary.post.draws.rda`, `brm1.rn.withPriors.rda` and `summary.brm1.rn.withPriors.rda`.
 - `03_HardItems.R`: the code for the analysis of the effects of order of exposure (type of training) with a focus on the difficulty level of the items (based on pre- and post-tests results). Runs with `HardData` datafile.
 - `04_TrainingDays.R`: the code for the analysis of participants' performance on the four days of training. Runs with `AllDayScores` and `TrainingData` datafiles.
-- `05_LearningRateEffect.jasp`: Estimates the Bayesian nonparametric correlations (Kendall's tau) using the *JASP* statistical program. Data is included in the package.
+- `05_LearningRateEffect.jasp`: the Bayesian nonparametric correlations (Kendall's tau) using the *JASP* statistical program. Data is included in the package.
+- `06_LearningRateEffect.R`: analysis of the effect of individual learning rates. Runs with `06_LearningRateData` datafile (identical to the data for *JASP* correlation estimates); `brm4.rda` and `summary.brm4.rda` contain the regression model and its summary, and `brm4.t.rda` and `summary.brm4.t.rda` refer to the trimmed model and its summary.
 
-The data can be downloaded from The University of Birmingham Institutional Research Archive (UBIRA) at [https://edata.bham.ac.uk/1155/](https://edata.bham.ac.uk/1155/). All files are saved in `*.csv` and `*.rda` format:
-
+The data can be downloaded from The University of Birmingham Institutional Research Archive (UBIRA) at [https://edata.bham.ac.uk/1155/](https://edata.bham.ac.uk/1155/). All files are saved in `*.csv` and `*.rda` format.
 - `ControlGroupTest`
 - `AllTestScores`
 - `HardData`
 - `AllDayScores`
 - `TrainingData`
-<br>
+- `LearningRateData`
 
 - - -
 
